@@ -26,6 +26,23 @@ img {
 
 // content
 
+$sidebar: hsl(205, 65%, 52%);
+
 .container {
-    background-color: purple;
+    background-color: magenta;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    .sidebar {
+        grid-row: span 2;
+        background-color: $sidebar;
+    }
+    .header {
+        grid-column: 2;
+        background-color: honeydew;
+    }
+    .content {
+        grid-column: 2;
+        background-color: coral;
+    }
 }
