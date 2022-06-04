@@ -66,6 +66,11 @@ $sidebar: hsl(205, 65%, 52%);
                     background-color: pink;
                     border-width: 0.5rem;
                     border-style: solid;
+                    border-radius: 1rem;
+                    .project-heading {
+                        font-size: larger;
+                        font-weight: 800;        
+                    }
                 }
                 .project-card:nth-child(odd) {
                     border-color: blue;
