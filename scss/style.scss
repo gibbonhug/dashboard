@@ -59,22 +59,17 @@ $project-border: hsl(33, 86%, 58%);
             #project-content-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
-                .project-card { // temp for visibility
-                    background-color: pink;
+                .project-card {
+                    background-color: white;
+                    padding: 1rem;
                     border-left-color: $project-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
-                    border-radius: 1rem;
+                    border-radius: .25rem;
                     .project-heading {
                         font-size: larger;
                         font-weight: 800;        
                     }
-                }
-                .project-card:nth-child(odd) {
-                   // border-color: blue;
-                }
-                .project-card:nth-child(even) {
-                   // border-color: green;
                 }
             }
         }
