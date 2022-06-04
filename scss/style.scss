@@ -50,10 +50,11 @@ $project-border: hsl(33, 86%, 58%);
     }
     #header {
         grid-column: 2;
-        background-color: honeydew;
+        background-color: honeydew; // temp
         #nav {
             display: flex;
             justify-content: space-between;
+            background-color: navy; // temp
             input {
                 background-color: $accent-gray;
                 border-radius: 1.5rem;
@@ -61,6 +62,7 @@ $project-border: hsl(33, 86%, 58%);
             }
         }
         #post {
+            background-color: plum; //temp
             .post-button {
                 background-color: $accent-blue;
                 border-radius: 1.5rem;
@@ -71,7 +73,7 @@ $project-border: hsl(33, 86%, 58%);
     }
     #meat {
         grid-column: 2;
-        background-color: magenta;
+        background-color: magenta; // temp
         display: grid;
         grid-template-columns: 4fr 1fr;
         gap: 1.5rem; // temp? probably move me to more general selector
@@ -81,7 +83,7 @@ $project-border: hsl(33, 86%, 58%);
         #project-subsection {
             grid-column: 1;
             grid-row: span 2;
-            background-color: palegreen;
+            background-color: palegreen; // temp
             #project-content-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
@@ -108,11 +110,11 @@ $project-border: hsl(33, 86%, 58%);
         }
         #announcement-subsection {
             grid-column: 2;
-            background-color: antiquewhite;
+            background-color: antiquewhite; // temp
         }
         #trending-subsection {
             grid-column: 2;
-            background-color: teal;
+            background-color: teal; // temp
         }
     }
 }
