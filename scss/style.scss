@@ -45,6 +45,12 @@ $project-border: hsl(33, 86%, 58%);
     .section {
         padding: 1.5rem;
     }
+    .card { // indv projects, the announcements and trending section
+        padding: 1rem;
+        border-radius: .25rem;
+        background-color: white;
+        box-shadow: .5rem .5rem rgba(0, 0, 0, 0.5);
+    }
     color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -56,6 +62,8 @@ $project-border: hsl(33, 86%, 58%);
     #header {
         grid-column: 2;
         background-color: honeydew; // temp
+        box-shadow: 0px 1rem teal;
+        margin-bottom: 1rem; // for box shadow 
         #nav {
             display: flex;
             justify-content: space-between;
@@ -112,9 +120,6 @@ $project-border: hsl(33, 86%, 58%);
                     border-left-color: $project-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
-                    padding: 1rem;
-                    border-radius: .25rem;
-                    background-color: white;        
                     .project-heading {
                         font-size: larger;
                     }
@@ -123,11 +128,6 @@ $project-border: hsl(33, 86%, 58%);
                     }
                 }
             }
-        }
-        .subsection-card {
-            padding: 1rem;
-            border-radius: .25rem;
-            background-color: white;        
         }
         #announcement-subsection {
             grid-column: 2;
