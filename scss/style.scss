@@ -28,6 +28,7 @@ img {
 // content
 
 $sidebar: hsl(205, 65%, 52%);
+$project-border: hsl(33, 86%, 58%);
 
 #container {
     color: black;
@@ -47,13 +48,9 @@ $sidebar: hsl(205, 65%, 52%);
         background-color: magenta;
         display: grid;
         grid-template-columns: 4fr 1fr;
-        .section { // align the heading above each section's content
-            display: flex;
-            flex-direction: column;
-            .section-heading { // font size
-                font-size: larger;
-                font-weight: 800;
-            }
+        .section-heading { // font size
+            font-size: larger;
+            font-weight: 800;
         }
         #project-section {
             grid-column: 1;
@@ -64,8 +61,9 @@ $sidebar: hsl(205, 65%, 52%);
                 grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
                 .project-card { // temp for visibility
                     background-color: pink;
-                    border-width: 0.5rem;
-                    border-style: solid;
+                    border-left-color: $project-border;
+                    border-left-width: 0.5rem;
+                    border-left-style: solid;
                     border-radius: 1rem;
                     .project-heading {
                         font-size: larger;
@@ -73,10 +71,10 @@ $sidebar: hsl(205, 65%, 52%);
                     }
                 }
                 .project-card:nth-child(odd) {
-                    border-color: blue;
+                   // border-color: blue;
                 }
                 .project-card:nth-child(even) {
-                    border-color: green;
+                   // border-color: green;
                 }
             }
         }
