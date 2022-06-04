@@ -48,6 +48,8 @@ $project-border: hsl(33, 86%, 58%);
         background-color: magenta;
         display: grid;
         grid-template-columns: 4fr 1fr;
+        gap: 1.5rem; // temp? probably move me to more general selector
+        padding: 1.5rem;
         .section-heading { // font size
             font-size: larger;
             font-weight: 800;
@@ -59,6 +61,7 @@ $project-border: hsl(33, 86%, 58%);
             #project-content-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
+                gap: 1.5rem; // temp?
                 .project-card {
                     display: flex;
                     flex-direction: column;
