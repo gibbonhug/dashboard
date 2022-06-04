@@ -31,6 +31,11 @@ $accent-blue: hsl(205, 65%, 52%);
 $accent-gray: hsl(47, 18%, 85%);
 $project-border: hsl(33, 86%, 58%);
 
+.temp-avatar-btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
 
 #container {
     font-family: sans-serif;
@@ -63,6 +68,11 @@ $project-border: hsl(33, 86%, 58%);
         }
         #post {
             background-color: plum; //temp
+            #post-greeting {
+                display: flex; // align avatar to left of text
+                align-items: center;
+                gap: .5rem;        
+            }
             .post-button {
                 background-color: $accent-blue;
                 border-radius: 1.5rem;
@@ -115,6 +125,11 @@ $project-border: hsl(33, 86%, 58%);
         #trending-subsection {
             grid-column: 2;
             background-color: teal; // temp
+            .trending-item {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
         }
     }
 }
