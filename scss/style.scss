@@ -15,9 +15,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     font-weight: normal;
 }
 
-ol, ul {
-    list-style: none;
-}
+// temp commented for visiblity
+// ol, ul {
+//     list-style: none;
+// }
 
 img {
     max-width: 100%;
@@ -58,6 +59,21 @@ $sidebar: hsl(205, 65%, 52%);
             grid-column: 1;
             grid-row: span 2;
             background-color: palegreen;
+            #project-content-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
+                .project-card { // temp for visibility
+                    background-color: pink;
+                    border-width: 0.5rem;
+                    border-style: solid;
+                }
+                .project-card:nth-child(odd) {
+                    border-color: blue;
+                }
+                .project-card:nth-child(even) {
+                    border-color: green;
+                }
+            }
         }
         #announcement-section {
             grid-column: 2;
