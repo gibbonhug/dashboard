@@ -79,6 +79,12 @@ $project-border: hsl(33, 86%, 58%);
                 border-style: none;
                 padding: .75rem 2.5rem;
             }
+            .post-button:hover {
+                background-color: darken($accent-blue, 10%)
+            }
+            .post-button:active {
+                background-color: darken($accent-blue, 40%)
+            }
         }
     }
     #meat {
