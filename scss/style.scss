@@ -60,15 +60,22 @@ $project-border: hsl(33, 86%, 58%);
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
                 .project-card {
-                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 1rem;
                     padding: 1rem;
                     border-left-color: $project-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
                     border-radius: .25rem;
+                    background-color: white;
                     .project-heading {
                         font-size: larger;
                         font-weight: 800;        
+                    }
+                    .project-icons {
+                        align-self: flex-end;
                     }
                 }
             }
