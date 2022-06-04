@@ -37,6 +37,9 @@ $project-border: hsl(33, 86%, 58%);
     .strong {
         font-weight: 800;
     }
+    .padding-15 {
+        padding: 1.5rem;
+    }
     color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -50,7 +53,6 @@ $project-border: hsl(33, 86%, 58%);
         background-color: honeydew;
         #nav {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
             input {
                 background-color: $accent-gray;
@@ -73,7 +75,6 @@ $project-border: hsl(33, 86%, 58%);
         display: grid;
         grid-template-columns: 4fr 1fr;
         gap: 1.5rem; // temp? probably move me to more general selector
-        padding: 1.5rem;
         .section-heading { // font size
             font-size: larger;
         }
