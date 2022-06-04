@@ -27,8 +27,10 @@ img {
 
 // content
 
-$accent: hsl(205, 65%, 52%);
+$accent-blue: hsl(205, 65%, 52%);
+$accent-gray: hsl(47, 18%, 85%);
 $project-border: hsl(33, 86%, 58%);
+
 
 #container {
     font-family: sans-serif;
@@ -41,14 +43,24 @@ $project-border: hsl(33, 86%, 58%);
     grid-template-rows: 1fr 5fr;
     #sidebar {
         grid-row: span 2;
-        background-color: $accent;
+        background-color: $accent-blue;
     }
     #header {
         grid-column: 2;
         background-color: honeydew;
+        #nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            input {
+                background-color: $accent-gray;
+                border-radius: 1.5rem;
+                border-style: none;
+            }
+        }
         #post {
             .post-button {
-                background-color: $accent;
+                background-color: $accent-blue;
                 border-radius: 1.5rem;
                 border-style: none;
                 padding: .75rem 2.5rem;
