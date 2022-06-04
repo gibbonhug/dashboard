@@ -29,7 +29,6 @@ img {
 $sidebar: hsl(205, 65%, 52%);
 
 #container {
-    background-color: magenta;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
@@ -41,8 +40,17 @@ $sidebar: hsl(205, 65%, 52%);
         grid-column: 2;
         background-color: honeydew;
     }
-    #content {
+    #meat {
         grid-column: 2;
-        background-color: coral;
+        background-color: magenta;
+        #project-section {
+            background-color: palegreen;
+        }
+        #announcement-section {
+            background-color: antiquewhite;
+        }
+        #trending-section {
+            background-color: teal;
+        }
     }
 }
