@@ -29,6 +29,7 @@ img {
 $sidebar: hsl(205, 65%, 52%);
 
 #container {
+    color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
@@ -43,13 +44,27 @@ $sidebar: hsl(205, 65%, 52%);
     #meat {
         grid-column: 2;
         background-color: magenta;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        .section { // align the heading above each section's content
+            display: flex;
+            flex-direction: column;
+            .section-heading { // font size
+                font-size: larger;
+                font-weight: 800;
+            }
+        }
         #project-section {
+            grid-column: 1;
+            grid-row: span 2;
             background-color: palegreen;
         }
         #announcement-section {
+            grid-column: 2;
             background-color: antiquewhite;
         }
         #trending-section {
+            grid-column: 2;
             background-color: teal;
         }
     }
