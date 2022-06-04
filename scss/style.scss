@@ -94,7 +94,7 @@ $project-border: hsl(33, 86%, 58%);
             grid-column: 1;
             grid-row: span 2;
             background-color: palegreen; // temp
-            #project-content-container {
+            #project-content {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
                 gap: 1.5rem; // temp?
@@ -103,12 +103,12 @@ $project-border: hsl(33, 86%, 58%);
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 1rem;
-                    padding: 1rem;
                     border-left-color: $project-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
+                    padding: 1rem;
                     border-radius: .25rem;
-                    background-color: white;
+                    background-color: white;        
                     .project-heading {
                         font-size: larger;
                     }
@@ -117,6 +117,11 @@ $project-border: hsl(33, 86%, 58%);
                     }
                 }
             }
+        }
+        .subsection-card {
+            padding: 1rem;
+            border-radius: .25rem;
+            background-color: white;        
         }
         #announcement-subsection {
             grid-column: 2;
