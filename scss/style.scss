@@ -27,21 +27,32 @@ img {
 
 // content
 
-$sidebar: hsl(205, 65%, 52%);
+$accent: hsl(205, 65%, 52%);
 $project-border: hsl(33, 86%, 58%);
 
 #container {
+    .strong {
+        font-weight: strong;
+    }
     color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     #sidebar {
         grid-row: span 2;
-        background-color: $sidebar;
+        background-color: $accent;
     }
     #header {
         grid-column: 2;
         background-color: honeydew;
+        #post {
+            .post-button {
+                background-color: $accent;
+                border-radius: 1.5rem;
+                border-style: none;
+                padding: .75rem 2.5rem;
+            }
+        }
     }
     #meat {
         grid-column: 2;
@@ -75,7 +86,6 @@ $project-border: hsl(33, 86%, 58%);
                     background-color: white;
                     .project-heading {
                         font-size: larger;
-                        font-weight: 800;        
                     }
                     .project-icons {
                         align-self: flex-end;
