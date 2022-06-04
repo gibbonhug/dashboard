@@ -13,7 +13,8 @@
             <div id="sidebar-title">
                 Dashboard
             </div>
-            <ul id="sidebar-links-1" class="sidebar-links">
+            <!-- same issue as post buttons as having to put strong directly on ul-->
+            <ul id="sidebar-links-1" class="sidebar-links strong">
                 <li>Home</li>
                 <li>Profile</li>
                 <li>Messages</li>
@@ -22,7 +23,7 @@
                 <li>Tasks</li>
                 <li>Communities</li>
             </ul>
-            <ul id="sidebar-links-2" class="sidebar-links">
+            <ul id="sidebar-links-2" class="sidebar-links strong">
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
@@ -49,9 +50,10 @@
                     </div>
                 </div>
                 <div id="post-buttons">
-                    <button class="post-button">New</button>
-                    <button class="post-button">Upload</button>
-                    <button class="post-button">Share</button>
+                    <!-- somehow button text not inheriting strong unless put directly on -->
+                    <button class="post-button strong">New</button>
+                    <button class="post-button strong">Upload</button>
+                    <button class="post-button strong">Share</button>
                 </div>
             </div>
         </div>
@@ -154,7 +156,7 @@
                 </div>
             </div>
             <div id="announcement-section" class="section">
-                <div id="announcement-section-heading" class="section-heading">
+                <div id="announcement-section-heading" class="section-heading strong">
                     Announcements Title
                 </div>
                 <div id="announcement-content-container" class="section-content-container">
@@ -170,7 +172,7 @@
                 </div>
             </div>
             <div id="trending-section" class="section">
-                <div id="trending-section-heading" class="section-heading">
+                <div id="trending-section-heading" class="section-heading strong">
                     Trending Title
                 </div>
                 <div id="trending-content-container" class="section-content-container">

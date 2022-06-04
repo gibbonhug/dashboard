@@ -31,8 +31,9 @@ $accent: hsl(205, 65%, 52%);
 $project-border: hsl(33, 86%, 58%);
 
 #container {
+    font-family: sans-serif;
     .strong {
-        font-weight: strong;
+        font-weight: 800;
     }
     color: black;
     display: grid;
@@ -63,7 +64,6 @@ $project-border: hsl(33, 86%, 58%);
         padding: 1.5rem;
         .section-heading { // font size
             font-size: larger;
-            font-weight: 800;
         }
         #project-section {
             grid-column: 1;
