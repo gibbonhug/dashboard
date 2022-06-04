@@ -37,7 +37,7 @@ $project-border: hsl(33, 86%, 58%);
     .strong {
         font-weight: 800;
     }
-    .padding-15 {
+    .section {
         padding: 1.5rem;
     }
     color: black;
@@ -75,10 +75,10 @@ $project-border: hsl(33, 86%, 58%);
         display: grid;
         grid-template-columns: 4fr 1fr;
         gap: 1.5rem; // temp? probably move me to more general selector
-        .section-heading { // font size
+        .subsection-heading { // font size
             font-size: larger;
         }
-        #project-section {
+        #project-subsection {
             grid-column: 1;
             grid-row: span 2;
             background-color: palegreen;
@@ -106,11 +106,11 @@ $project-border: hsl(33, 86%, 58%);
                 }
             }
         }
-        #announcement-section {
+        #announcement-subsection {
             grid-column: 2;
             background-color: antiquewhite;
         }
-        #trending-section {
+        #trending-subsection {
             grid-column: 2;
             background-color: teal;
         }
