@@ -29,6 +29,7 @@ img {
 
 $accent-blue: hsl(205, 65%, 52%);
 $accent-gray: hsl(0, 0%, 85%);
+$accent-gray-font: hsl(0, 0%, 50%);
 $project-border: hsl(33, 86%, 58%);
 @font-face {
     font-family: 'Roboto-Regular';
@@ -50,6 +51,9 @@ $project-border: hsl(33, 86%, 58%);
     background-color: $accent-gray;
     .strong {
         font-family: 'Roboto-Bold';
+    }
+    .small {
+        font-size: small;
     }
     .smaller {
         font-size: smaller;
