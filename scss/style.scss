@@ -15,10 +15,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     font-weight: normal;
 }
 
-// temp commented for visiblity
-// ol, ul {
-//     list-style: none;
-// }
+temp commented for visiblity
+ol, ul {
+    list-style: none;
+}
 
 img {
     max-width: 100%;
@@ -66,6 +66,14 @@ $project-border: hsl(33, 86%, 58%);
     #sidebar {
         grid-row: span 2;
         background-color: $accent-blue;
+        color: white;
+        > * {
+            background-color: blue;
+            padding-block: 1rem;
+        }
+        .sidebar-link-item {
+            padding-block: 0.5rem;
+        }
     }
     #header {
         grid-column: 2;
