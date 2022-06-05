@@ -30,6 +30,14 @@ img {
 $accent-blue: hsl(205, 65%, 52%);
 $accent-gray: hsl(47, 18%, 85%);
 $project-border: hsl(33, 86%, 58%);
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../assets/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../assets/Roboto/Roboto-Bold.ttf);
+}
 
 .temp-avatar-btn {
     border-radius: 50%;
@@ -38,9 +46,9 @@ $project-border: hsl(33, 86%, 58%);
 }
 
 #container {
-    font-family: 'Roboto';
+    font-family: 'Roboto-Regular';
     .strong {
-        font-weight: 800;
+        font-family: 'Roboto-Bold';
     }
     .section {
         padding: 1.5rem;
