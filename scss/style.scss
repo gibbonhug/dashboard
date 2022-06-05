@@ -63,10 +63,17 @@ $project-border: hsl(33, 86%, 58%);
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    #sidebar,
+    #header {
+        padding-top: 1rem; // reduce top of page
+    }
     #sidebar {
         grid-row: span 2;
         background-color: $accent-blue;
         color: white;
+        #sidebar-title {
+            padding-top: .55rem; // algin with search bar
+        }
         #sidebar-title, .sidebar-links {
             padding-bottom: 1rem;
         }
@@ -86,6 +93,7 @@ $project-border: hsl(33, 86%, 58%);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: purple;
             #nav-search {
                 input {
                     background-color: $accent-gray;
