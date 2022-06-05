@@ -47,8 +47,12 @@ $project-border: hsl(33, 86%, 58%);
 
 #container {
     font-family: 'Roboto-Regular';
+    background-color: $accent-gray;
     .strong {
         font-family: 'Roboto-Bold';
+    }
+    .smaller {
+        font-size: smaller;
     }
     .section {
         padding: 1.5rem;
@@ -57,7 +61,7 @@ $project-border: hsl(33, 86%, 58%);
         padding: 1rem;
         border-radius: .25rem;
         background-color: white;
-        box-shadow: .5rem .5rem rgba(0, 0, 0, 0.5);
+        box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, 0.15);
     }
     color: black;
     display: grid;
@@ -86,9 +90,9 @@ $project-border: hsl(33, 86%, 58%);
     }
     #header {
         grid-column: 2;
-        background-color: honeydew; // temp
-        box-shadow: 0px 1rem teal;
-        margin-bottom: 1rem; // for box shadow 
+        background-color: white;
+        box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.15);
+        z-index: 1; // so box shadow covers meat section
         #nav {
             display: flex;
             justify-content: space-between;
@@ -104,6 +108,9 @@ $project-border: hsl(33, 86%, 58%);
         }
         #post {
             background-color: plum; //temp
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1rem;
             #post-greeting {
                 display: flex; // align avatar to left of text
                 align-items: center;
@@ -126,14 +133,14 @@ $project-border: hsl(33, 86%, 58%);
         }
     }
     #meat {
+        background-color: $accent-gray;
+        .subsection-heading {
+            padding-bottom: .5rem;
+        }
         grid-column: 2;
-        background-color: magenta; // temp
         display: grid;
         grid-template-columns: 4fr 1fr;
         gap: 1.5rem; // temp? probably move me to more general selector
-        .subsection-heading { // font size
-            font-size: larger;
-        }
         #project-subsection {
             grid-column: 1;
             grid-row: span 2;
@@ -150,9 +157,6 @@ $project-border: hsl(33, 86%, 58%);
                     border-left-color: $project-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
-                    .project-heading {
-                        font-size: larger;
-                    }
                     .project-icons {
                         align-self: flex-end;
                     }
