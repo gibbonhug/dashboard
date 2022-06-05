@@ -67,12 +67,15 @@ $project-border: hsl(33, 86%, 58%);
         grid-row: span 2;
         background-color: $accent-blue;
         color: white;
-        > * {
+        #sidebar-title, .sidebar-links {
             background-color: blue;
-            padding-block: 1rem;
+            padding-bottom: 1rem;
         }
         .sidebar-link-item {
             padding-block: 0.5rem;
+            display: flex; // keep icons at baseline with link
+            align-items: center;
+            gap: .5rem;
         }
     }
     #header {
