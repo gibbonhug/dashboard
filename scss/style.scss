@@ -38,7 +38,7 @@ $project-border: hsl(33, 86%, 58%);
 }
 
 #container {
-    font-family: sans-serif;
+    font-family: 'Roboto';
     .strong {
         font-weight: 800;
     }
@@ -88,10 +88,12 @@ $project-border: hsl(33, 86%, 58%);
                 padding: .75rem 2.5rem;
             }
             .post-button:hover {
-                background-color: darken($accent-blue, 10%)
+                background-color: darken($accent-blue, 10%);
+                cursor: pointer;
             }
             .post-button:active {
-                background-color: darken($accent-blue, 40%)
+                background-color: darken($accent-blue, 40%);
+                cursor: pointer;
             }
         }
     }
