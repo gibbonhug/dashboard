@@ -143,6 +143,7 @@ $project-border: hsl(33, 86%, 58%);
             }
             .post-button {
                 background-color: $accent-blue;
+                color: white;
                 border-radius: 1.5rem;
                 border-style: none;
                 padding: .75rem 2.5rem;
@@ -171,7 +172,7 @@ $project-border: hsl(33, 86%, 58%);
             grid-row: span 2;
             #project-content {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
                 gap: 1.5rem; // temp?
                 .project-card {
                     display: flex;
