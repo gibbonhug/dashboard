@@ -30,7 +30,7 @@ img {
 $accent-blue: hsl(205, 65%, 52%);
 $accent-gray: hsl(0, 0%, 85%);
 $accent-gray-font: hsl(0, 0%, 37%);
-$project-border: hsl(33, 86%, 58%);
+$joke-border: hsl(33, 86%, 58%);
 @font-face {
     font-family: 'Roboto-Regular';
     src: url(../assets/Roboto/Roboto-Regular.ttf);
@@ -61,7 +61,7 @@ $project-border: hsl(33, 86%, 58%);
     .section {
         padding: 1.5rem;
     }
-    .card { // indv projects, the announcements and trending section
+    .card { // indv jokes, the announcements and trending section
         padding: 1rem;
         border-radius: .25rem;
         background-color: white;
@@ -209,28 +209,28 @@ $project-border: hsl(33, 86%, 58%);
         }
         grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
-        #project-subsection {
+        #joke-subsection {
             grid-column: 1;
             grid-row: span 2;
-            #project-content {
+            #joke-content {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
                 gap: 1.5rem; // temp?
-                .project-card {
+                .joke-card {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 1rem;
-                    border-left-color: $project-border;
+                    border-left-color: $joke-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
-                    .project-heading {
+                    .joke-heading {
                         padding-block: .5rem;
                     }
-                    .project-text {
+                    .joke-text {
                         color: $accent-gray-font;
                     }
-                    .project-icons {
+                    .joke-icons {
                         align-self: flex-end;
                     }
                 }
