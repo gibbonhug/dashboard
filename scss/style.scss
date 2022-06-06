@@ -174,8 +174,8 @@ $project-border: hsl(33, 86%, 58%);
         #announcement-subsection {
             grid-column: 2;
             background-color: antiquewhite; // temp
-            .announcement-item:not(:last-child) {
-                border-bottom: 1px solid black;
+            .announcement-item:not(:last-child) { 
+                border-bottom: 0.1rem solid $accent-gray; // 'hrs' between items
             }
         }
         #trending-subsection {
