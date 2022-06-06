@@ -70,10 +70,11 @@ $project-border: hsl(33, 86%, 58%);
     color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: clamp(15vh, 25vh, 1fr) 5fr;
     #sidebar,
     #header {
         padding-top: 1rem; // reduce top of page
+        max-height: 100%; // no overflow
     }
     #sidebar {
         grid-row: span 2;
@@ -167,9 +168,16 @@ $project-border: hsl(33, 86%, 58%);
                 }
             }
         }
+        .announcement-item,
+        .trending-item {
+            padding: 0.5rem;
+        }
         #announcement-subsection {
             grid-column: 2;
             background-color: antiquewhite; // temp
+            .announcement-item:not(:last-child) {
+                border-bottom: 1px solid black;
+            }
         }
         #trending-subsection {
             grid-column: 2;
