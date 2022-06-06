@@ -170,7 +170,7 @@ $project-border: hsl(33, 86%, 58%);
             // https://www.youtube.com/watch?v=VQraviuwbzU
             grid-template-columns: 4fr 1fr; // col 2 announcements and trending
         }
-        grid-template-rows: auto 1fr; // to reduce extra vertical spacing
+        grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
         #project-subsection {
             grid-column: 1;
