@@ -165,7 +165,10 @@ $project-border: hsl(33, 86%, 58%);
         }
         grid-column: 2;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr; // default
+        @media (min-width: 40em) { // normal screen size
+            grid-template-columns: 1fr 1fr; // https://www.youtube.com/watch?v=VQraviuwbzU
+        }
         gap: 1.5rem; // temp? probably move me to more general selector
         #project-subsection {
             grid-column: 1;
@@ -196,13 +199,19 @@ $project-border: hsl(33, 86%, 58%);
             }
         }
         #announcement-subsection {
-            grid-column: 2;
+            grid-column: 1;
+            @media (min-width: 40em) {
+                grid-column: 2;
+            }
             .announcement-item:not(:last-child) { 
                 border-bottom: 0.1rem solid $accent-gray; // 'hrs' between items
             }
         }
         #trending-subsection {
-            grid-column: 2;
+            grid-column: 1;
+            @media (min-width: 40em) {
+                grid-column: 2;
+            }
             .trending-item {
                 display: flex;
                 align-items: center;
