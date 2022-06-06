@@ -158,7 +158,10 @@ $project-border: hsl(33, 86%, 58%);
         }
         grid-column: 2;
         display: grid;
-        grid-template-columns: 4fr 1fr;
+        grid-template-columns: 
+            minmax(min(15rem, 100%), 1fr)
+            minmax(min(3rem, 100%), 5fr);
+        }
         gap: 1.5rem; // temp? probably move me to more general selector
         #project-subsection {
             grid-column: 1;
