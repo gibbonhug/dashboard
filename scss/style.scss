@@ -166,16 +166,18 @@ $project-border: hsl(33, 86%, 58%);
         grid-column: 2;
         display: grid;
         grid-template-columns: 1fr; // default
-        @media (min-width: 40em) { // normal screen size
-            grid-template-columns: 1fr 1fr; // https://www.youtube.com/watch?v=VQraviuwbzU
+        @media (min-width: 40em) { // normal screen size 
+            // https://www.youtube.com/watch?v=VQraviuwbzU
+            grid-template-columns: 4fr 1fr; // col 2 announcements and trending
         }
+        grid-template-rows: auto 1fr; // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
         #project-subsection {
             grid-column: 1;
             grid-row: span 2;
             #project-content {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(min(100%, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
+                grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
                 gap: 1.5rem; // temp?
                 .project-card {
                     display: flex;
