@@ -73,6 +73,10 @@ $project-border: hsl(33, 86%, 58%);
         justify-content: flex-end;
         gap: 1rem;
     }
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
     .svg-icon-black {
         cursor: pointer;
     }
