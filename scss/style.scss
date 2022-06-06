@@ -76,6 +76,8 @@ $project-border: hsl(33, 86%, 58%);
     svg {
         width: 1.5rem;
         height: 1.5rem;
+        min-width: 1.5rem;
+        min-height: 1.5rem;
     }
     .svg-icon-black {
         cursor: pointer; // do not want pointer on the sidebar for now (temp?)
