@@ -73,8 +73,11 @@ $project-border: hsl(33, 86%, 58%);
         justify-content: flex-end;
         gap: 1rem;
     }
-    .svg-icon > img {
+    .svg-icon {
         cursor: pointer;
+    }
+    .svg-icon-black {
+        fill: $accent-blue;
     }
     color: black;
     display: grid;
@@ -116,6 +119,9 @@ $project-border: hsl(33, 86%, 58%);
                     background-color: $accent-gray;
                     border-radius: 1.5rem;
                     border-style: none;
+                    height: 2rem;
+                    width: 25rem;
+                    text-indent: 1rem;
                 }
             }
         }
