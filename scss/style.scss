@@ -88,6 +88,9 @@ $project-border: hsl(33, 86%, 58%);
     .svg-icon-white {
         fill: white;
     }
+    .svg-message { // reflect
+        transform: scaleX(-1);
+    }
     color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
