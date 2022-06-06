@@ -61,7 +61,7 @@ $joke-border: hsl(33, 86%, 58%);
     .section {
         padding: 1.5rem;
     }
-    .card { // indv jokes, the announcements and trending section
+    .card { // indv jokes, the announcements and popular section
         padding: 1rem;
         border-radius: .25rem;
         background-color: white;
@@ -205,7 +205,7 @@ $joke-border: hsl(33, 86%, 58%);
             grid-template-columns: 
                 minmax(min(20rem, 100%), 4fr)
                 minmax(min(15rem,100%), 1fr)
-            ; // col 2 announcements and trending
+            ; // col 2 announcements and popular
         }
         grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
@@ -236,7 +236,7 @@ $joke-border: hsl(33, 86%, 58%);
                 }
             }
         }
-        #announcement-trending-subsection {
+        #announcement-popular-subsection {
             grid-column: 1;
             @media (min-width: 40em) {
                 grid-column: 2;
@@ -254,10 +254,10 @@ $joke-border: hsl(33, 86%, 58%);
                 border-bottom: 0.1rem solid $accent-gray; // 'hrs' between items
             }
             .announcement-item,
-            .trending-item {
+            .popular-item {
                 padding: 0.5rem;
             }
-            .trending-item {
+            .popular-item {
                 display: flex;
                 align-items: center;
                 gap: .5rem;
