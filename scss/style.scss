@@ -97,7 +97,6 @@ $project-border: hsl(33, 86%, 58%);
         padding-top: 1rem; // reduce top of page
     }
     #sidebar {
-
         grid-row: span 2;
         background-color: $accent-blue;
         color: white;
@@ -120,23 +119,33 @@ $project-border: hsl(33, 86%, 58%);
             display: none;
         }
     }
-    #mobile-bar {
-        background-color: purple;
-        padding: 1rem;
-    }
     #header {
+        @media (max-width: 40em) {
+            padding-top: 0rem;
+        }
         grid-column: 2;
         background-color: white;
         box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.15);
         z-index: 1; // so box shadow covers meat section
-        div:not(:last-child) { // padding btw each div
-            padding-bottom: .5rem;
+        .header-subsection:not(:last-child) { // padding btw each div
+            padding-bottom: 1rem;
         }
-        #nav {
+        #mobile-bar-subsection {
+            background-color: $accent-blue;
+            padding: 1rem;
+            width: 100vw;
+            @media (min-width: 40em) {
+                display: none;
+            }
+        }
+        #nav-subsection {
             // background-color: green;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media (max-width: 40em) {
+                padding-top: 1rem;
+            }
             #nav-search {
                 input {
                     background-color: $accent-gray;
@@ -148,12 +157,11 @@ $project-border: hsl(33, 86%, 58%);
                 }
             }
         }
-        #post {
+        #post-subsection {
             //background-color: aqua;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 1rem;
             #post-greeting {
                 display: flex; // align avatar to left of text
                 align-items: center;
