@@ -67,6 +67,13 @@ $project-border: hsl(33, 86%, 58%);
         background-color: white;
         box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, 0.15);
     }
+    .icon-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+        cursor: pointer;
+    }
     color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
