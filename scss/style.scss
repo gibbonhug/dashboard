@@ -132,6 +132,7 @@ $project-border: hsl(33, 86%, 58%);
         }
         #mobile-bar-subsection {
             background-color: $accent-blue;
+            color: white;
             padding: 1rem;
             width: 100vw;
             @media (min-width: 40em) {
@@ -141,6 +142,7 @@ $project-border: hsl(33, 86%, 58%);
         #nav-subsection {
             // background-color: green;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             @media (max-width: 40em) {
