@@ -72,12 +72,11 @@ $project-border: hsl(33, 86%, 58%);
         align-items: center;
         justify-content: flex-end;
         gap: 1rem;
+        flex-shrink: 0;
     }
     svg {
         width: 1.5rem;
         height: 1.5rem;
-        min-width: 1.5rem;
-        min-height: 1.5rem;
     }
     .svg-icon-black {
         cursor: pointer; // do not want pointer on the sidebar for now (temp?)
@@ -98,6 +97,7 @@ $project-border: hsl(33, 86%, 58%);
         padding-top: 1rem; // reduce top of page
     }
     #sidebar {
+
         grid-row: span 2;
         background-color: $accent-blue;
         color: white;
@@ -112,6 +112,12 @@ $project-border: hsl(33, 86%, 58%);
             display: flex; // keep icons at baseline with link
             align-items: center;
             gap: .5rem;
+        }
+    }
+    @media (max-width: 40em) { // normal screen size 
+        // https://www.youtube.com/watch?v=VQraviuwbzU
+        #sidebar {
+            display: none;
         }
     }
     #header {
