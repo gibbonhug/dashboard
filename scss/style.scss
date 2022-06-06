@@ -163,7 +163,7 @@ $project-border: hsl(33, 86%, 58%);
     #meat {
         background-color: $accent-gray;
         .subsection-heading {
-            padding-bottom: .5rem;
+            padding-block: .5rem;
         }
         grid-column: 2;
         display: grid;
@@ -172,7 +172,7 @@ $project-border: hsl(33, 86%, 58%);
             // https://www.youtube.com/watch?v=VQraviuwbzU
             grid-template-columns: 
                 minmax(min(20rem, 100%), 4fr)
-                minmax(min(20rem,100%), 1fr)
+                minmax(min(15rem,100%), 1fr)
             ; // col 2 announcements and trending
         }
         grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
@@ -204,29 +204,26 @@ $project-border: hsl(33, 86%, 58%);
                 }
             }
         }
-        .announcement-item,
-        .trending-item {
-            padding: 0.5rem;
-            .subsection-text {
-                color: $accent-gray-font
-            }
-        }
-        #announcement-subsection {
+        #announcement-trending-subsection {
             grid-column: 1;
             @media (min-width: 40em) {
                 grid-column: 2;
             }
-            .announcement-heading {
+            .subsection-content {
+                padding-bottom: 1rem;
+            }
+            .subsection-heading {
                 padding-block: 0.2rem;
+            }
+            .subsection-text {
+                color: $accent-gray-font;
             }
             .announcement-item:not(:last-child) { 
                 border-bottom: 0.1rem solid $accent-gray; // 'hrs' between items
             }
-        }
-        #trending-subsection {
-            grid-column: 1;
-            @media (min-width: 40em) {
-                grid-column: 2;
+            .announcement-item,
+            .trending-item {
+                padding: 0.5rem;
             }
             .trending-item {
                 display: flex;
