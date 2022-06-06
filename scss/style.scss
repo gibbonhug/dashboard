@@ -208,6 +208,9 @@ $project-border: hsl(33, 86%, 58%);
             @media (min-width: 40em) {
                 grid-column: 2;
             }
+            .announcement-heading {
+                padding-block: 0.2rem;
+            }
             .announcement-item:not(:last-child) { 
                 border-bottom: 0.1rem solid $accent-gray; // 'hrs' between items
             }
