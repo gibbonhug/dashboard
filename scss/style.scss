@@ -78,7 +78,14 @@ $project-border: hsl(33, 86%, 58%);
         height: 1.5rem;
     }
     .svg-icon-black {
-        cursor: pointer;
+        cursor: pointer; // do not want pointer on the sidebar for now (temp?)
+        fill: $accent-gray-font;
+    }
+    .svg-icon-black:hover {
+        fill: black;
+    }
+    .svg-icon-white {
+        fill: white;
     }
     color: black;
     display: grid;
