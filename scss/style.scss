@@ -120,12 +120,20 @@ $project-border: hsl(33, 86%, 58%);
             display: none;
         }
     }
+    #mobile-bar {
+        background-color: purple;
+        padding: 1rem;
+    }
     #header {
         grid-column: 2;
         background-color: white;
         box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.15);
         z-index: 1; // so box shadow covers meat section
+        div:not(:last-child) { // padding btw each div
+            padding-bottom: .5rem;
+        }
         #nav {
+            // background-color: green;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -141,8 +149,10 @@ $project-border: hsl(33, 86%, 58%);
             }
         }
         #post {
+            //background-color: aqua;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding-top: 1rem;
             #post-greeting {
                 display: flex; // align avatar to left of text
@@ -155,6 +165,9 @@ $project-border: hsl(33, 86%, 58%);
                 border-radius: 1.5rem;
                 border-style: none;
                 padding: .75rem 2.5rem;
+            }
+            .post-button:not(:last-child) { 
+                margin-right: 1rem;
             }
             .post-button:hover {
                 background-color: darken($accent-blue, 10%);
