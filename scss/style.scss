@@ -30,7 +30,7 @@ img {
 $accent-blue: hsl(205, 65%, 52%);
 $accent-gray: hsl(0, 0%, 85%);
 $accent-gray-font: hsl(0, 0%, 37%);
-$joke-border: hsl(33, 86%, 58%);
+$post-border: hsl(33, 86%, 58%);
 @font-face {
     font-family: 'Roboto-Regular';
     src: url(../assets/Roboto/Roboto-Regular.ttf);
@@ -61,7 +61,7 @@ $joke-border: hsl(33, 86%, 58%);
     .section {
         padding: 1.5rem;
     }
-    .card { // indv jokes, the announcements and popular section
+    .card { // indv posts, the announcements and popular section
         padding: 1rem;
         border-radius: .25rem;
         background-color: white;
@@ -162,31 +162,31 @@ $joke-border: hsl(33, 86%, 58%);
                 }
             }
         }
-        #post-subsection {
+        #publish-subsection {
             //background-color: aqua;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            #post-greeting {
+            #publish-greeting {
                 display: flex; // align avatar to left of text
                 align-items: center;
                 gap: .5rem;        
             }
-            .post-button {
+            .publish-button {
                 background-color: $accent-blue;
                 color: white;
                 border-radius: 1.5rem;
                 border-style: none;
                 padding: .75rem 2.5rem;
             }
-            .post-button:not(:last-child) { 
+            .publish-button:not(:last-child) { 
                 margin-right: 1rem;
             }
-            .post-button:hover {
+            .publish-button:hover {
                 background-color: darken($accent-blue, 10%);
                 cursor: pointer;
             }
-            .post-button:active {
+            .publish-button:active {
                 background-color: darken($accent-blue, 40%);
                 cursor: pointer;
             }
@@ -209,28 +209,28 @@ $joke-border: hsl(33, 86%, 58%);
         }
         grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
-        #joke-subsection {
+        #post-subsection {
             grid-column: 1;
             grid-row: span 2;
-            #joke-content {
+            #post-content {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
                 gap: 1.5rem; // temp?
-                .joke-card {
+                .post-card {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 1rem;
-                    border-left-color: $joke-border;
+                    border-left-color: $post-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
-                    .joke-heading {
+                    .post-heading {
                         padding-block: .5rem;
                     }
-                    .joke-text {
+                    .post-text {
                         color: $accent-gray-font;
                     }
-                    .joke-icons {
+                    .post-icons {
                         align-self: flex-end;
                     }
                 }
