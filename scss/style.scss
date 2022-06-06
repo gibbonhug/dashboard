@@ -166,7 +166,7 @@ $project-border: hsl(33, 86%, 58%);
             background-color: palegreen; // temp
             #project-content {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr; // temp, add autofit & minmax
+                grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
                 gap: 1.5rem; // temp?
                 .project-card {
                     display: flex;
