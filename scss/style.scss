@@ -187,6 +187,9 @@ $project-border: hsl(33, 86%, 58%);
                     border-left-color: $project-border;
                     border-left-width: 0.5rem;
                     border-left-style: solid;
+                    .project-heading {
+                        padding-block: .5rem;
+                    }
                     .project-icons {
                         align-self: flex-end;
                     }
