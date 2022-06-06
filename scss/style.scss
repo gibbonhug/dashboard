@@ -110,7 +110,6 @@ $project-border: hsl(33, 86%, 58%);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: purple;
             #nav-search {
                 input {
                     background-color: $accent-gray;
@@ -123,7 +122,6 @@ $project-border: hsl(33, 86%, 58%);
             }
         }
         #post {
-            background-color: plum; //temp
             display: flex;
             justify-content: space-between;
             padding-top: 1rem;
@@ -155,18 +153,14 @@ $project-border: hsl(33, 86%, 58%);
         }
         grid-column: 2;
         display: grid;
-        grid-template-columns: 
-            minmax(min(15rem, 100%), 1fr)
-            minmax(min(3rem, 100%), 5fr);
-        }
+        grid-template-columns: 1fr 1fr;
         gap: 1.5rem; // temp? probably move me to more general selector
         #project-subsection {
             grid-column: 1;
             grid-row: span 2;
-            background-color: palegreen; // temp
             #project-content {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
                 gap: 1.5rem; // temp?
                 .project-card {
                     display: flex;
@@ -191,14 +185,12 @@ $project-border: hsl(33, 86%, 58%);
         }
         #announcement-subsection {
             grid-column: 2;
-            background-color: antiquewhite; // temp
             .announcement-item:not(:last-child) { 
                 border-bottom: 0.1rem solid $accent-gray; // 'hrs' between items
             }
         }
         #trending-subsection {
             grid-column: 2;
-            background-color: teal; // temp
             .trending-item {
                 display: flex;
                 align-items: center;
