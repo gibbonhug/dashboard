@@ -168,7 +168,10 @@ $project-border: hsl(33, 86%, 58%);
         grid-template-columns: 1fr; // default
         @media (min-width: 40em) { // normal screen size 
             // https://www.youtube.com/watch?v=VQraviuwbzU
-            grid-template-columns: 4fr 1fr; // col 2 announcements and trending
+            grid-template-columns: 
+                minmax(min(20rem, 100%), 4fr)
+                minmax(min(20rem,100%), 1fr)
+            ; // col 2 announcements and trending
         }
         grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
