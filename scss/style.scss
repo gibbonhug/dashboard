@@ -170,6 +170,9 @@ $project-border: hsl(33, 86%, 58%);
         .announcement-item,
         .trending-item {
             padding: 0.5rem;
+            .subsection-text {
+                color: $accent-gray-font
+            }
         }
         #announcement-subsection {
             grid-column: 2;
