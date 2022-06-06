@@ -72,6 +72,8 @@ $project-border: hsl(33, 86%, 58%);
         align-items: center;
         justify-content: flex-end;
         gap: 1rem;
+    }
+    .svg-icon > img {
         cursor: pointer;
     }
     color: black;
