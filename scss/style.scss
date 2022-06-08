@@ -27,7 +27,7 @@ img {
 
 // content
 
-$accent-blue: hsl(205, 65%, 52%);
+$accent-main: hsl(0, 65%, 52%);
 $accent-gray: hsl(0, 0%, 85%);
 $accent-gray-font: hsl(0, 0%, 37%);
 $post-border: hsl(33, 86%, 58%);
@@ -101,7 +101,7 @@ $post-border: hsl(33, 86%, 58%);
     }
     #sidebar {
         grid-row: span 2;
-        background-color: $accent-blue;
+        background-color: $accent-main;
         color: white;
         #sidebar-title {
             padding-top: .55rem; // algin with search bar
@@ -134,7 +134,7 @@ $post-border: hsl(33, 86%, 58%);
             padding-bottom: 1rem;
         }
         #mobile-bar-subsection {
-            background-color: $accent-blue;
+            background-color: $accent-main;
             color: white;
             padding: 1rem;
             width: 100vw;
@@ -173,7 +173,7 @@ $post-border: hsl(33, 86%, 58%);
                 gap: .5rem;        
             }
             .publish-button {
-                background-color: $accent-blue;
+                background-color: $accent-main;
                 color: white;
                 border-radius: 1.5rem;
                 border-style: none;
@@ -183,11 +183,11 @@ $post-border: hsl(33, 86%, 58%);
                 margin-right: 1rem;
             }
             .publish-button:hover {
-                background-color: darken($accent-blue, 10%);
+                background-color: darken($accent-main, 10%);
                 cursor: pointer;
             }
             .publish-button:active {
-                background-color: darken($accent-blue, 40%);
+                background-color: darken($accent-main, 40%);
                 cursor: pointer;
             }
         }
