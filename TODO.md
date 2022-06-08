@@ -1,7 +1,8 @@
 # todo:
-- fix Meat column responsiveness
-# lower prio
-- fix sidebar / main content on low width
-- svgs change color on hover
+[] Move mobile nav bar outside of content header
+[] Make class / id names more consistent
+[] Add text content & change color scheme
 # complete:
-[-] add svgs
+[x] Add svgs
+[x] Some svgs change color on hover
+[x] Add responsiveness to inner content grid
