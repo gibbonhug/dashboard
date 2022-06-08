@@ -1,5 +1,5 @@
-# Responsive Dashboard
-A simple responsive dashboard design
+# ClownBuzz Dashboard
+A simple responsive dashboard design for 'ClownBuzz,' a fictional social network for clowns.
 
 # Attribution
 
