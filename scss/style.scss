@@ -98,7 +98,7 @@ $post-border: hsl(33, 86%, 58%);
         grid-template-rows: clamp(15vh, 25vh, 1fr) 5fr;    
     }
     @media (max-width: 40em) { // messing up when not done inside a second media query
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
         grid-template-columns: 1fr;
     }
     #sidebar-section {
@@ -126,7 +126,7 @@ $post-border: hsl(33, 86%, 58%);
         @media (min-width: 40em) {
             display: none; // hidden large scr
         }
-        background-color: purple; // temp for visiblity
+        background-color: $accent-main;
         color: white;
         padding: 1rem;
         width: 100vw;
@@ -197,7 +197,7 @@ $post-border: hsl(33, 86%, 58%);
         .subsection-heading {
             padding-block: .5rem;
         }
-        grid-column: 1;
+        grid-column: 1; // on small screen
         grid-template-columns: 1fr; // on small screen
         @media (min-width: 40em) {
             grid-column: 2;
@@ -208,7 +208,7 @@ $post-border: hsl(33, 86%, 58%);
             ; // col 2 announcements and popular
         }
         display: grid;
-        grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
+        grid-template-rows: repeat(auto-fit, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
         #post-subsection {
             grid-column: 1;
@@ -216,7 +216,7 @@ $post-border: hsl(33, 86%, 58%);
             #post-content {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); // thanks kevin https://www.youtube.com/watch?v=z2kuC7w9emE
-                gap: 1.5rem; // temp?
+                gap: 1.5rem;
                 .post-card {
                     display: flex;
                     flex-direction: column;
