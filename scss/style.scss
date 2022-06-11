@@ -199,6 +199,7 @@ $post-border: hsl(33, 86%, 58%);
         }
     }
     #meat-section {
+        overflow-x: scroll;
         background-color: $accent-gray;
         .subsection-heading {
             padding-block: .5rem;
