@@ -94,16 +94,19 @@ $post-border: hsl(33, 86%, 58%);
     color: black;
     display: grid;
     @media (min-width: 40em) {
-        //
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: clamp(15vh, 25vh, 1fr) 5fr;    
     }
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: clamp(15vh, 25vh, 1fr) 5fr;
-    #sidebar {
+    @media (max-width: 40em) { // messing up when not done inside a second media query
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+    #sidebar-section {
         @media (max-width: 40em) { // normal screen size 
             display: none; // https://www.youtube.com/watch?v=VQraviuwbzU
-
         }
         grid-row: span 2;
+        grid-column: 1;
         background-color: $accent-main;
         color: white;
         #sidebar-title {
@@ -119,7 +122,7 @@ $post-border: hsl(33, 86%, 58%);
             gap: .5rem;
         }
     }
-    #mobile-header {
+    #mobile-header-section {
         @media (min-width: 40em) {
             display: none; // hidden large scr
         }
@@ -128,8 +131,11 @@ $post-border: hsl(33, 86%, 58%);
         padding: 1rem;
         width: 100vw;
     }
-    #nav-publish {
-        grid-column: 2;
+    #nav-publish-section {
+        grid-column: 1;
+        @media (min-width: 40em) {
+            grid-column: 2;
+        }
         background-color: white;
         box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.15);
         z-index: 1; // so box shadow covers meat section
@@ -186,21 +192,22 @@ $post-border: hsl(33, 86%, 58%);
             }
         }
     }
-    #meat {
+    #meat-section {
         background-color: $accent-gray;
         .subsection-heading {
             padding-block: .5rem;
         }
-        grid-column: 2;
-        display: grid;
-        grid-template-columns: 1fr; // default
-        @media (min-width: 40em) { // normal screen size 
+        grid-column: 1;
+        grid-template-columns: 1fr; // on small screen
+        @media (min-width: 40em) {
+            grid-column: 2;
             // https://www.youtube.com/watch?v=VQraviuwbzU
             grid-template-columns: 
-                minmax(min(20rem, 100%), 4fr)
-                minmax(min(15rem,100%), 1fr)
+            minmax(min(20rem, 100%), 4fr)
+            minmax(min(15rem,100%), 1fr)
             ; // col 2 announcements and popular
         }
+        display: grid;
         grid-template-rows: repeat(auto, 1fr); // to reduce extra vertical spacing
         gap: 1.5rem; // temp? probably move me to more general selector
         #post-subsection {
