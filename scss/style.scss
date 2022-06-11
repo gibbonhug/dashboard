@@ -96,7 +96,7 @@ $post-border: hsl(33, 86%, 58%);
     grid-template-columns: 1fr 5fr;
     grid-template-rows: clamp(15vh, 25vh, 1fr) 5fr;
     #sidebar,
-    #header {
+    #nav-publish {
         padding-top: 1rem; // reduce top of page
     }
     #sidebar {
@@ -131,10 +131,7 @@ $post-border: hsl(33, 86%, 58%);
         padding: 1rem;
         width: 100vw;
     }
-    #header {
-        @media (max-width: 40em) {
-            padding-top: 0rem;
-        }
+    #nav-publish {
         grid-column: 2;
         background-color: white;
         box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.15);
