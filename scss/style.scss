@@ -93,12 +93,11 @@ $post-border: hsl(33, 86%, 58%);
     }
     color: black;
     display: grid;
+    @media (min-width: 40em) {
+        //
+    }
     grid-template-columns: 1fr 5fr;
     grid-template-rows: clamp(15vh, 25vh, 1fr) 5fr;
-    #sidebar,
-    #nav-publish {
-        padding-top: 1rem; // reduce top of page
-    }
     #sidebar {
         @media (max-width: 40em) { // normal screen size 
             display: none; // https://www.youtube.com/watch?v=VQraviuwbzU
