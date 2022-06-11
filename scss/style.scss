@@ -129,7 +129,7 @@ $post-border: hsl(33, 86%, 58%);
         background-color: $accent-main;
         color: white;
         padding: 1rem;
-        width: 100vw;
+        width: 100%; // 100vw put white space to my right
     }
     #nav-publish-section {
         grid-column: 1;
