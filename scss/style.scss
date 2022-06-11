@@ -15,7 +15,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     font-weight: normal;
 }
 
-temp commented for visiblity
 ol, ul {
     list-style: none;
 }
@@ -31,6 +30,7 @@ $accent-main: hsl(0, 60%, 60%);
 $accent-gray: hsl(0, 0%, 85%);
 $accent-gray-font: hsl(0, 0%, 37%);
 $post-border: hsl(33, 86%, 58%);
+
 @font-face {
     font-family: 'Roboto-Regular';
     src: url(../assets/Roboto/Roboto-Regular.ttf);
@@ -122,6 +122,15 @@ $post-border: hsl(33, 86%, 58%);
             display: none;
         }
     }
+    #mobile-header {
+        @media (min-width: 40em) {
+            display: none; // hidden large scr
+        }
+        background-color: $accent-main;
+        color: white;
+        padding: 1rem;
+        width: 100vw;
+    }
     #header {
         @media (max-width: 40em) {
             padding-top: 0rem;
@@ -132,15 +141,6 @@ $post-border: hsl(33, 86%, 58%);
         z-index: 1; // so box shadow covers meat section
         .header-subsection:not(:last-child) { // padding btw each div
             padding-bottom: 1rem;
-        }
-        #mobile-bar-subsection {
-            background-color: $accent-main;
-            color: white;
-            padding: 1rem;
-            width: 100vw;
-            @media (min-width: 40em) {
-                display: none;
-            }
         }
         #nav-subsection {
             // background-color: green;
