@@ -139,7 +139,7 @@ $post-border: hsl(33, 86%, 58%);
         background-color: white;
         box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.15);
         z-index: 1; // so box shadow covers meat section
-        .header-subsection:not(:last-child) { // padding btw each div
+        .nav-publish-subsection:not(:last-child) { // padding btw each div
             padding-bottom: 1rem;
         }
         #nav-subsection {
