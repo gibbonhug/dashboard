@@ -157,7 +157,7 @@ $post-border: hsl(33, 86%, 58%);
                     border-radius: 1.5rem;
                     border-style: none;
                     height: 2rem;
-                    width: 25rem;
+                    width: min(75vw, 25rem);
                     text-indent: 1rem;
                 }
             }
