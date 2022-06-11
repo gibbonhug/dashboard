@@ -124,7 +124,7 @@ $post-border: hsl(33, 86%, 58%);
         @media (min-width: 40em) {
             display: none; // hidden large scr
         }
-        background-color: $accent-main;
+        background-color: purple; // temp for visiblity
         color: white;
         padding: 1rem;
         width: 100vw;
