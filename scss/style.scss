@@ -100,6 +100,10 @@ $post-border: hsl(33, 86%, 58%);
         padding-top: 1rem; // reduce top of page
     }
     #sidebar {
+        @media (max-width: 40em) { // normal screen size 
+            display: none; // https://www.youtube.com/watch?v=VQraviuwbzU
+
+        }
         grid-row: span 2;
         background-color: $accent-main;
         color: white;
@@ -114,12 +118,6 @@ $post-border: hsl(33, 86%, 58%);
             display: flex; // keep icons at baseline with link
             align-items: center;
             gap: .5rem;
-        }
-    }
-    @media (max-width: 40em) { // normal screen size 
-        // https://www.youtube.com/watch?v=VQraviuwbzU
-        #sidebar {
-            display: none;
         }
     }
     #mobile-header {
