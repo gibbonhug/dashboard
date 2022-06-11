@@ -1,8 +1,10 @@
 # todo:
-[] Move mobile nav bar outside of content header
 [] Make class / id names more consistent
-[] Add text content & change color scheme
+[] Add text content
+
 # complete:
+[x] Move mobile nav bar outside of content header
+[x] Change color scheme (now reddish)
 [x] Add svgs
 [x] Some svgs change color on hover
 [x] Add responsiveness to inner content grid
