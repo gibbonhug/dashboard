@@ -4,10 +4,6 @@ html {
     box-sizing: border-box;
     font-size: 16px;
 }
-
-html,body{
-    overflow-x: hidden;
-}
   
 *, *:before, *:after {
     box-sizing: inherit;
@@ -53,6 +49,7 @@ $post-border: hsl(33, 86%, 58%);
 #container {
     font-family: 'Roboto-Regular';
     background-color: $accent-gray;
+    overflow-x: hidden;
     .strong {
         font-family: 'Roboto-Bold';
     }
@@ -62,8 +59,12 @@ $post-border: hsl(33, 86%, 58%);
     .smaller {
         font-size: smaller;
     }
+    
     .section {
-        padding: 1.5rem;
+        padding: .75rem;
+        @media (min-width: 40em) {
+            padding: 1.5rem; // more space around when larger page
+        }
     }
     .card { // indv posts, the announcements and popular section
         padding: 1rem;
