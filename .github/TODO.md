@@ -1,6 +1,6 @@
 # todo:
 [] Make class / id names more consistent
-[] Add text content
+[] Add/finish text content
 
 # complete:
 [x] Move mobile nav bar outside of content header
