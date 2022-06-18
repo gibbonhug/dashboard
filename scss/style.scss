@@ -49,7 +49,6 @@ $post-border: hsl(33, 86%, 58%);
 #container {
     font-family: 'Roboto-Regular';
     background-color: $accent-gray;
-    overflow-x: hidden;
     .strong {
         font-family: 'Roboto-Bold';
     }
@@ -134,7 +133,9 @@ $post-border: hsl(33, 86%, 58%);
         background-color: $accent-main;
         color: white;
         padding: 1rem;
-        width: 100%; // 100vw put white space to my right
+        width: 100vw;
+        margin-inline-start: 50%; // https://www.youtube.com/watch?v=MywezIxlp8Y 'break out of the container' section
+        transform: translateX(-50%);
     }
     #nav-publish-section {
         grid-column: 1;
@@ -199,7 +200,6 @@ $post-border: hsl(33, 86%, 58%);
         }
     }
     #meat-section {
-        overflow-x: scroll;
         background-color: $accent-gray;
         .subsection-heading {
             padding-block: .5rem;
