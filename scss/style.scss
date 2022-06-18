@@ -160,7 +160,7 @@ $post-border: hsl(33, 86%, 58%);
                 input {
                     background-color: $accent-gray;
                     color: black;
-                    border-radius: 1.5rem;
+                    border-radius: 100vw;
                     border-style: none;
                     height: 2rem;
                     width: min(75vw, 25rem);
@@ -181,7 +181,7 @@ $post-border: hsl(33, 86%, 58%);
             .publish-button {
                 background-color: $accent-main;
                 color: white;
-                border-radius: 1.5rem;
+                border-radius: 100vw;
                 border-style: none;
                 padding: .75rem 2.5rem;
             }
